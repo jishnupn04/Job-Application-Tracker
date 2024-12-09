@@ -8,6 +8,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -33,7 +34,9 @@ const Navbar = () => {
                     Home
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <NavigationMenuLink>Link</NavigationMenuLink>
+                <NavigationMenuLink asChild>
+                    <Link to="/" className="p-5">Home</Link>
+                  </NavigationMenuLink>
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>

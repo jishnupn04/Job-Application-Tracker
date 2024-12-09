@@ -20,7 +20,7 @@ import { Chart } from "./Chart";
 
 const Dashboard = () => {
   return (
-    <div className="relative flex w-full min-h-screen overflow-y-auto items-center justify-center">
+    <div className="absolute flex w-full min-h-screen overflow-y-auto align  top-0 items-center justify-center">
       <main className="flex-1 w-full max-w-7xl mx-auto p-6 pt-20">
         {/* Tabs */}
         <Tabs defaultValue="overview" className="space-y-4">
